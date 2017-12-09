@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+
+ext {
+    bintrayRepo = 'ing-software'
+    bintrayName = 'OpenCV-Android'
+
+    publishedGroupId = 'com.ing.software'
+    libraryName = 'OpenCV-Android'
+    artifact = 'opencv-android'
+
+    libraryDescription = 'OpenCV for Android compiled for arm-v7'
+
+    siteUrl = 'https://github.com/IngSoftware2017/OpenCV-Android'
+    gitUrl = 'https://github.com/IngSoftware2017/OpenCV-Android.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'zarik5'
+    developerName = 'Riccardo Zaglia'
+    developerEmail = 'riccardo.zaglia5@gmail.com'
+
+    licenseName = '3-clause BSD License'
+    licenseUrl = 'https://opencv.org/license.html'
+    allLicenses = ["BSD"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

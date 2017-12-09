@@ -8,7 +8,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/openCVLibrary331" />
+            <option value="$PROJECT_DIR$/opencv-android" />
             <option value="$PROJECT_DIR$/testapp" />
           </set>
         </option>

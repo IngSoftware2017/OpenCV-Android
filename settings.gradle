@@ -1,1 +1,1 @@
-include ':openCVLibrary331', ':testapp'
+include ':opencv-android', ':testapp'

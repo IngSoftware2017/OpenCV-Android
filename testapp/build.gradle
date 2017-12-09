@@ -2,9 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-
-
-
     defaultConfig {
         applicationId "com.ing.software.testapp"
         minSdkVersion 21
@@ -34,5 +31,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
-    implementation project(":openCVLibrary331")
+    implementation 'com.ing.software:opencv-android:1.0.0'
+
+
 }
